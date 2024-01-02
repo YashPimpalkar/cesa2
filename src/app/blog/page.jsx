@@ -6,7 +6,7 @@ import image1 from '../../../public/bob.png'
 
 
 async function getData() {
-  const res = await fetch('http://cesa2.netlify.app/api/posts',{
+  const res = await fetch('https://cesa2.netlify.app/api/posts',{
      cache: 'no-store' },
 );
   if (!res.ok) {
