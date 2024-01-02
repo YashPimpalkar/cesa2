@@ -2,7 +2,7 @@ import React from 'react'
 import styles from './page.module.css'
 import Image from 'next/image'
 import Button from '@/components/Button/Button'
-import image1 from '../../../public/contactus.svg' 
+import image1 from '../../../public/contactus.png' 
 
 const Contact = () => {
   return (
