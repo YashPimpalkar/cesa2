@@ -1,0 +1,60 @@
+.container {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 50px;
+    flex-direction: column;
+}
+.image {
+    object-fit: cover;
+}
+.top {
+    flex: 1;
+    display: flex;
+    gap: 10px;
+    height: 300px;
+
+}
+.info{
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+}
+.title {
+    font-size: 45px;
+}
+.desc {
+    font-size: 20px;
+    color: #999;
+   
+   
+}
+.author {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 0;
+
+}
+.avatar {
+    object-fit: cover;
+    border-radius: 50%;
+}
+.imagecontainer {
+    flex: 1;
+    height: 300px;
+    position: relative;
+
+}
+.image {
+    object-fit: cover;
+}
+.content {
+    margin-top: 50px;
+    font-size: 20px;
+    font-weight: 300;
+    color: #999;
+    text-align: justify;
+}
