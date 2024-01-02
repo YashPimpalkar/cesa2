@@ -7,7 +7,7 @@ import image1 from '../../../public/Contactus.png'
 const Contact = () => {
   return (
     <div className={styles.container}>
-       <h1 className={styles.title}>Let's keep In Touch</h1>
+       <h1 className={styles.title}>Lets keep In Touch</h1>
        <div className={styles.content}>
           <div className={styles.imgContainer}>
              <Image  src={image1} alt='contact' fill={true} className={styles.image}  />
