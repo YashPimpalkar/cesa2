@@ -57,6 +57,7 @@ justify-content: space-between;
 }
 @media  (max-width:640px){
   .container{
+    padding: 0 5px;
     width: 478px;
   }
   
