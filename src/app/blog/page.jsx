@@ -6,9 +6,9 @@ import image1 from '../../../public/bob.png'
 
 
 async function getData() {
-  const res = await fetch('https://jsonplaceholder.typicode.com/posts',{
+  const res = await fetch('http://localhost:3000/api/posts',{
      cache: 'no-store' },
-)
+);
   if (!res.ok) {
     // This will activate the closest `error.js` Error Boundary
     throw new Error('Failed to fetch data')
@@ -22,13 +22,13 @@ const Blog = async () => {
   return (
     <div className={styles.maincontainer}>
       {data.map((item)=>(
-      <Link href="/blog/testId" className={styles.container} key={item.id}>
+      <Link href={`/blog/${item._id}`} className={styles.container} key={item.id}>
         <div className={styles.imagecontainer}>
-          <Image src={image1} alt='' width={400} height={250} className={styles.images} />
+          <Image src={item.img} alt='' width={400} height={250} className={styles.images} />
         </div>
         <div className={styles.content}>
           <h1 className={styles.title}>{item.title}</h1>
-          <p className={styles.desc}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates fuga dolorem illo! Inventore, tempora optio totam aliquam adipisci nesciunt voluptatem quos, tempore iste ut voluptate.</p>
+          <p className={styles.desc}>{item.desc}</p>
         </div>
       </Link>
       ))}

@@ -29,47 +29,6 @@ justify-content: space-between;
 
 }
 
-@media  (max-width:1536px){
-  .container{
-    width: 1366px;
-  }
-}
-@media  (max-width:1366px){
-  .container{
-    width: 1280px;
-  }
-}
-@media  (max-width:1280px){
-  .container{
-    padding: 0 20px;
-    width: 1024px;
-  }
-}
-@media  (max-width:1024px){
-  .container{
-    width: 768px;
-  }
-}
-@media  (max-width:768px){
-  .container{
-    width: 640px;
-  }
-}
-@media  (max-width:640px){
-  .container{
-    padding: 0 5px;
-    width: 478px;
-  }
-  
-}
-@media  (max-width:478px){
-  .container{
-    width: 400px;
-  }
-  
-}
-
- 
 
 
 
@@ -88,3 +47,62 @@ justify-content: space-between;
 .theme{
   transition: 1s all ease; 
 }
+
+@media only screen and (max-width: 300px) {
+  /* Styles for devices with screens up to 300px wide (e.g., very small screens) */
+  body {
+    font-size: 14px;
+  }
+
+  .container {
+    padding: 0 10px;
+  }
+
+  /* Add more specific styles as needed */
+}
+
+@media only screen and (min-width: 301px) and (max-width: 767px) {
+  /* Styles for devices with screens between 301px and 767px wide (e.g., smartphones) */
+  body {
+    font-size: 14px;
+  }
+
+  .container {
+    padding: 0 20px;
+  }
+
+  /* Add more specific styles as needed */
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  /* Styles for devices with screens between 768px and 991px wide (e.g., tablets) */
+  body {
+    font-size: 16px;
+  }
+
+  .container {
+    padding: 0 30px;
+  }
+
+  /* Add more specific styles as needed */
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  /* Styles for devices with screens between 992px and 1199px wide (e.g., small laptops) */
+  body {
+    font-size: 18px;
+  }
+
+  .container {
+    padding: 0 40px;
+  }
+
+  /* Add more specific styles as needed */
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1600px) {
+  /* Styles for devices with screens between 1200px and 1600px wide (e.g., larger laptops and desktops) */
+  /* Keep the original styles for this range */
+}
+
+ 

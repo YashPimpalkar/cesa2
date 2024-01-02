@@ -6,11 +6,11 @@ const Portfolio = () => {
    <div className={styles.container}>
      <h1 className={styles.selectTitle}> Choose gallery</h1>
      <div className={styles.items}>
-       <Link href="/portfolio/illustraions" className={styles.item}>
-        <span className={styles.title}>Illustraions</span>
+       <Link href="/portfolio/illustrations" className={styles.item}>
+        <span className={styles.title}>Illustrations</span>
        </Link>
-       <Link href="/portfolio/website" className={styles.item}>
-        <span className={styles.title}>Website</span>
+       <Link href="/portfolio/websites" className={styles.item}>
+        <span className={styles.title}>Websites</span>
        </Link>
        <Link href="/portfolio/applications" className={styles.item}>
         <span className={styles.title}>applications</span>
