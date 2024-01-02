@@ -34,6 +34,9 @@
   .desc{
     font-size: 12px;
   }
+  .img{
+    object-fit: contain;
+  }
 }
 
 @media screen and (max-width: 600px) {
